@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home": "Start",
+    "menu": "Speisekarte",
+    "about": "Geschichte",
+    "events": "Veranstaltungen",
+    "gallery": "Galerie",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Lebendig. Gesellig.<br />Handwerklich. Lokal.",
+    "description": "Bar 26 Twenty Six ist das Herz der guten Zeiten — wo handgefertigte Getränke, kräftige Aromen und herzliche Gastfreundschaft aufeinandertreffen. Gemacht für Einheimische und Reisende gleichermaßen.",
+    "cta": "Speisekarte Entdecken"
+  },
+  "story": {
+    "eyebrow": "Unsere Geschichte",
+    "title": "Lokal im Herzen",
+    "text": "Aus Leidenschaft für Handwerk und Gemeinschaft entstanden, ist Bar 26 der Ort, an dem Nachbarn sich treffen und Erinnerungen entstehen. Wir setzen auf lokale Zutaten, saisonale Aromen und zeitlose Gastfreundschaft."
+  },
+  "menu": {
+    "eyebrow": "Für Dich Gemacht",
+    "title": "Entdecke Unsere Karte",
+    "categories": {
+      "cocktails": "Signature Cocktails",
+      "beers": "Lokale Biere & Weine",
+      "tapas": "Tapas & Kleine Gerichte",
+      "spirits": "Spirituosen & Klassiker",
+      "nonalcoholic": "Alkoholfrei"
+    },
+    "cocktails_link": "Cocktails",
+    "tapas_link": "Tapas"
+  },
+  "events": {
+    "eyebrow": "Events & Veranstaltungen",
+    "title": "Gute Stimmung<br />Jede Woche",
+    "text": "Von Live-Musik bis zu saisonalen Verkostungen — im Bar 26 ist immer etwas los."
+  },
+  "footer": {
+    "hours_title": "Öffnungszeiten",
+    "mon_thu": "Mo - Do",
+    "fri_sat": "Fr - Sa",
+    "sunday": "Sonntag",
+    "hours_1": "16:00 - 00:00",
+    "hours_2": "16:00 - 02:00",
+    "hours_3": "16:00 - 23:00",
+    "contact_title": "Kontakt",
+    "address": "Plaça de l'Ajuntament, 26<br />08370 Calella, Spanien<br /><br />+34 622 43 02 80",
+    "tagline": "Gute Getränke. Gute Leute. Gute Zeiten.",
+    "brand": "Bar 26 Twenty Six"
+  },
+  "modal": {
+    "close": "Fenster schließen"
+  },
+  "image_alt": {
+    "hero": "Whisky-Cocktail mit Minze in einer Bar",
+    "exterior": "Bar 26 Außenansicht bei Nacht",
+    "desk": "Tisch mit Getränken und Bar-Artikeln",
+    "cocktail": "Cocktails",
+    "facade": "Bar-Fassade",
+    "tapas": "Tapas",
+    "bw_menu": "Schwarz-Weiß-Menütafel",
+    "interior": "Bar-Innenraum",
+    "photo1": "Bar-Foto 1",
+    "photo2": "Bar-Foto 2",
+    "photo3": "Bar-Foto 3",
+    "photo4": "Bar-Foto 4",
+    "photo5": "Bar-Foto 5",
+    "menu_modal": "Menü"
+  }
+}

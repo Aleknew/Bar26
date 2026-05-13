@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,118 +22,126 @@
         </button>
 
         <nav class="main-nav" aria-label="Main navigation">
-          <a class="active" href="#home">Home</a>
-          <a href="#menu">Menu</a>
-          <a href="#about">About</a>
-          <a href="#events">Events</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
+          <a class="active" href="#home" data-i18n="nav.home">Home</a>
+          <a href="#menu" data-i18n="nav.menu">Menu</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#events" data-i18n="nav.events">Events</a>
+          <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
+      </div>
 
+      <!-- Language Switcher -->
+      <div class="lang-switcher" role="group" aria-label="Language selector">
+        <button type="button" class="lang-btn" data-i18n-switcher="ca" title="Català">CA</button>
+        <button type="button" class="lang-btn" data-i18n-switcher="es" title="Español">ES</button>
+        <button type="button" class="lang-btn" data-i18n-switcher="en" title="English">EN</button>
+        <button type="button" class="lang-btn" data-i18n-switcher="fr" title="Français">FR</button>
+        <button type="button" class="lang-btn" data-i18n-switcher="de" title="Deutsch">DE</button>
       </div>
     </header>
 
     <main>
       <section class="hero reveal">
         <div class="hero-copy">
-          <h1>Vibrant. Social.<br />Crafted. Local.</h1>
+          <h1 data-i18n="hero.title">Vibrant. Social.<br />Crafted. Local.</h1>
           <span class="gold-rule"></span>
-          <p>
-            Bar 26 Twenty Six is the heart of good times-where handcrafted drinks,
+          <p data-i18n="hero.description">
+            Bar 26 Twenty Six is the heart of good times — where handcrafted drinks,
             bold flavors, and warm hospitality come together. Made for locals and
             travelers alike.
           </p>
           <div class="hero-actions">
-            <a class="solid-button" href="#menu">Explore Menu</a>
+            <a class="solid-button" href="#menu" data-i18n="hero.cta">Explore Menu</a>
           </div>
         </div>
 
-        <div class="hero-image" role="img" aria-label="Whiskey cocktail with mint in a bar"></div>
+        <div class="hero-image" role="img" data-i18n-alt="image_alt.hero" aria-label="Whiskey cocktail with mint in a bar"></div>
       </section>
 
       <section class="story section-split reveal" id="about">
         <div class="section-copy">
-          <p class="eyebrow">Our Story</p>
-          <h2>Local at Heart</h2>
-          <p>
+          <p class="eyebrow" data-i18n="story.eyebrow">Our Story</p>
+          <h2 data-i18n="story.title">Local at Heart</h2>
+          <p data-i18n="story.text">
             Born from a passion for craft and community, Bar 26 is where neighbors
             meet and memories are made. We champion local ingredients, seasonal
             flavors, and timeless hospitality.
           </p>
         </div>
-        <img src="assets/exterior.webp" alt="Bar 26 exterior at night" />
-        <img src="assets/desk.webp" alt="Desk with drinks and bar items" />
+        <img src="assets/exterior.webp" data-i18n-alt="image_alt.exterior" alt="Bar 26 exterior at night" />
+        <img src="assets/desk.webp" data-i18n-alt="image_alt.desk" alt="Desk with drinks and bar items" />
       </section>
 
       <section class="menu-section reveal" id="menu">
         <div class="menu-intro">
-          <p class="eyebrow">Crafted For You</p>
-          <h2>Explore Our Menu</h2>
+          <p class="eyebrow" data-i18n="menu.eyebrow">Crafted For You</p>
+          <h2 data-i18n="menu.title">Explore Our Menu</h2>
           <ul class="category-list">
-            <li><span>⌁</span> Signature Cocktails</li>
-            <li><span>⚑</span> Local Beers &amp; Wines</li>
-            <li><span>◌</span> Tapas &amp; Small Plates</li>
-            <li><span>▥</span> Spirits &amp; Classics</li>
-            <li><span>☕</span> Non-Alcoholic</li>
+            <li><span>⌁</span> <span data-i18n="menu.categories.cocktails">Signature Cocktails</span></li>
+            <li><span>⚑</span> <span data-i18n="menu.categories.beers">Local Beers & Wines</span></li>
+            <li><span>◌</span> <span data-i18n="menu.categories.tapas">Tapas & Small Plates</span></li>
+            <li><span>▥</span> <span data-i18n="menu.categories.spirits">Spirits & Classics</span></li>
+            <li><span>☕</span> <span data-i18n="menu.categories.nonalcoholic">Non-Alcoholic</span></li>
           </ul>
         </div>
 
         <article class="menu-card">
-          <img src="assets/coctail.webp" alt="Coctails" />
+          <img src="assets/coctail.webp" data-i18n-alt="image_alt.cocktail" alt="Cocktails" />
           <div>
-            <h3><a class="menu-link" href="#" data-modal="assets/coctail_menu.webp">Coctails <span>→</span></a></h3>
+            <h3><a class="menu-link" href="#" data-modal="assets/coctail_menu.webp"><span data-i18n="menu.cocktails_link">Cocktails</span> <span>→</span></a></h3>
           </div>
         </article>
 
         <article class="menu-card menu-card--full">
-          <img src="assets/facade.webp" alt="Bar facade" />
+          <img src="assets/facade.webp" data-i18n-alt="image_alt.facade" alt="Bar facade" />
           <div></div>
         </article>
 
         <article class="menu-card">
-          <img src="assets/tapas.webp" alt="Tapas" />
+          <img src="assets/tapas.webp" data-i18n-alt="image_alt.tapas" alt="Tapas" />
           <div>
-            <h3><a class="menu-link" href="#" data-modal="assets/tapas_menu.webp">Tapas <span>→</span></a></h3>
+            <h3><a class="menu-link" href="#" data-modal="assets/tapas_menu.webp"><span data-i18n="menu.tapas_link">Tapas</span> <span>→</span></a></h3>
           </div>
         </article>
       </section>
 
       <section class="events section-split reveal" id="events">
-        <img src="assets/bw_menu.webp" alt="Black and white menu board" />
+        <img src="assets/bw_menu.webp" data-i18n-alt="image_alt.bw_menu" alt="Black and white menu board" />
         <div class="section-copy">
-          <p class="eyebrow">Events &amp; Happenings</p>
-          <h2>Good Vibes<br />Every Week</h2>
-          <p>
+          <p class="eyebrow" data-i18n="events.eyebrow">Events & Happenings</p>
+          <h2 data-i18n="events.title">Good Vibes<br />Every Week</h2>
+          <p data-i18n="events.text">
             From live music to seasonal tastings, there's always something happening
             at Bar 26.
           </p>
         </div>
-        <img src="assets/interior.webp" alt="Interior of the bar" />
+        <img src="assets/interior.webp" data-i18n-alt="image_alt.interior" alt="Interior of the bar" />
       </section>
 
       <section class="gallery reveal" id="gallery" aria-label="Bar 26 gallery">
-        <img src="assets/photo1.webp" alt="Bar photo 1" />
-        <img src="assets/photo2.webp" alt="Bar photo 2" />
-        <img src="assets/photo3.webp" alt="Bar photo 3" />
-        <img src="assets/photo4.webp" alt="Bar photo 4" />
-        <img src="assets/photo5.webp" alt="Bar photo 5" />
+        <img src="assets/photo1.webp" data-i18n-alt="image_alt.photo1" alt="Bar photo 1" />
+        <img src="assets/photo2.webp" data-i18n-alt="image_alt.photo2" alt="Bar photo 2" />
+        <img src="assets/photo3.webp" data-i18n-alt="image_alt.photo3" alt="Bar photo 3" />
+        <img src="assets/photo4.webp" data-i18n-alt="image_alt.photo4" alt="Bar photo 4" />
+        <img src="assets/photo5.webp" data-i18n-alt="image_alt.photo5" alt="Bar photo 5" />
       </section>
     </main>
 
     <footer class="footer" id="contact">
       <div class="footer-main">
         <div>
-          <p class="eyebrow">Hours</p>
+          <p class="eyebrow" data-i18n="footer.hours_title">Hours</p>
           <dl class="hours">
-            <div><dt>Mon - Thu</dt><dd>4PM - 12AM</dd></div>
-            <div><dt>Fri - Sat</dt><dd>4PM - 2AM</dd></div>
-            <div><dt>Sunday</dt><dd>4PM - 11PM</dd></div>
+            <div><dt data-i18n="footer.mon_thu">Mon - Thu</dt><dd data-i18n="footer.hours_1">4PM - 12AM</dd></div>
+            <div><dt data-i18n="footer.fri_sat">Fri - Sat</dt><dd data-i18n="footer.hours_2">4PM - 2AM</dd></div>
+            <div><dt data-i18n="footer.sunday">Sunday</dt><dd data-i18n="footer.hours_3">4PM - 11PM</dd></div>
           </dl>
         </div>
 
         <div>
-          <p class="eyebrow">Contact</p>
-          <address>
+          <p class="eyebrow" data-i18n="footer.contact_title">Contact</p>
+          <address data-i18n="footer.address">
             Plaça de l'Ajuntament, 26<br />
             08370 Calella, Spain<br /><br />
             +34 622 43 02 80
@@ -155,8 +163,8 @@
 
       <div class="footer-strip">
         <div class="mini-brand"><span>Bar</span><strong>26</strong></div>
-        <p>Good Drinks. Good People. Good Times.</p>
-        <p>Bar 26 Twenty Six</p>
+        <p data-i18n="footer.tagline">Good Drinks. Good People. Good Times.</p>
+        <p data-i18n="footer.brand">Bar 26 Twenty Six</p>
         <div class="strip-socials">
           <span>◎</span><span>f</span><span>♪</span>
         </div>
@@ -165,11 +173,12 @@
 
     <div class="modal-overlay" id="menu-modal">
       <div class="modal-content">
-        <button class="modal-close" aria-label="Close modal">&times;</button>
-        <img src="" alt="Menu" id="modal-image" />
+        <button class="modal-close" data-i18n-aria="modal.close" aria-label="Close modal">&times;</button>
+        <img src="" data-i18n-alt="image_alt.menu_modal" alt="Menu" id="modal-image" />
       </div>
     </div>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

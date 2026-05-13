@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "menu": "Carta",
+    "about": "Historia",
+    "events": "Eventos",
+    "gallery": "Galería",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Vibrante. Social.<br />Artesanal. Local.",
+    "description": "Bar 26 Twenty Six es el corazón de los buenos momentos — donde las bebidas artesanales, los sabores intensos y la cálida hospitalidad se unen. Hecho para locales y viajeros por igual.",
+    "cta": "Explorar la Carta"
+  },
+  "story": {
+    "eyebrow": "Nuestra Historia",
+    "title": "Local de Corazón",
+    "text": "Nacido de la pasión por la artesanía y la comunidad, Bar 26 es donde los vecinos se encuentran y se crean recuerdos. Defendemos los ingredientes locales, los sabores de temporada y la hospitalidad atemporal."
+  },
+  "menu": {
+    "eyebrow": "Hecho para Ti",
+    "title": "Descubre Nuestra Carta",
+    "categories": {
+      "cocktails": "Cócteles Signature",
+      "beers": "Cervezas y Vinos Locales",
+      "tapas": "Tapas y Platillos",
+      "spirits": "Destilados y Clásicos",
+      "nonalcoholic": "Sin Alcohol"
+    },
+    "cocktails_link": "Cócteles",
+    "tapas_link": "Tapas"
+  },
+  "events": {
+    "eyebrow": "Eventos y Actividades",
+    "title": "Buenas Vibras<br />Cada Semana",
+    "text": "Desde música en vivo hasta catas de temporada, siempre hay algo sucediendo en Bar 26."
+  },
+  "footer": {
+    "hours_title": "Horario",
+    "mon_thu": "Lun - Jue",
+    "fri_sat": "Vie - Sáb",
+    "sunday": "Domingo",
+    "hours_1": "16:00 - 00:00",
+    "hours_2": "16:00 - 02:00",
+    "hours_3": "16:00 - 23:00",
+    "contact_title": "Contacto",
+    "address": "Plaça de l'Ajuntament, 26<br />08370 Calella, España<br /><br />+34 622 43 02 80",
+    "tagline": "Buenas Bebidas. Buena Gente. Buenos Momentos.",
+    "brand": "Bar 26 Twenty Six"
+  },
+  "modal": {
+    "close": "Cerrar ventana"
+  },
+  "image_alt": {
+    "hero": "Cóctel de whisky con menta en un bar",
+    "exterior": "Exterior del Bar 26 de noche",
+    "desk": "Mesa con bebidas y artículos de bar",
+    "cocktail": "Cócteles",
+    "facade": "Fachada del bar",
+    "tapas": "Tapas",
+    "bw_menu": "Cartel de menú en blanco y negro",
+    "interior": "Interior del bar",
+    "photo1": "Foto del bar 1",
+    "photo2": "Foto del bar 2",
+    "photo3": "Foto del bar 3",
+    "photo4": "Foto del bar 4",
+    "photo5": "Foto del bar 5",
+    "menu_modal": "Menú"
+  }
+}

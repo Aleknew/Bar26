@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home": "Inici",
+    "menu": "Carta",
+    "about": "Història",
+    "events": "Esdeveniments",
+    "gallery": "Galeria",
+    "contact": "Contacte"
+  },
+  "hero": {
+    "title": "Vibrant. Social.<br />Artesà. Local.",
+    "description": "Bar 26 Twenty Six és el cor dels bons moments — on les begudes artesanes, els sabors intensos i l'hospitalitat càlida es troben. Creat per a locals i viatgers per igual.",
+    "cta": "Explorar la Carta"
+  },
+  "story": {
+    "eyebrow": "La Nostra Història",
+    "title": "Local de Cor",
+    "text": "Nascut de la passió per l'artesania i la comunitat, el Bar 26 és on els veïns es troben i es creen records. Defensem els ingredients locals, els sabors de temporada i l'hospitalitat atemporal."
+  },
+  "menu": {
+    "eyebrow": "Fet per a Tu",
+    "title": "Descobreix la Nostra Carta",
+    "categories": {
+      "cocktails": "Còctels Signature",
+      "beers": "Cerveses i Vins Locals",
+      "tapas": "Tapas i Platets",
+      "spirits": "Destil·lats i Clàssics",
+      "nonalcoholic": "Sense Alcohol"
+    },
+    "cocktails_link": "Còctels",
+    "tapas_link": "Tapas"
+  },
+  "events": {
+    "eyebrow": "Esdeveniments i Activitats",
+    "title": "Bones Vibracions<br />Cada Setmana",
+    "text": "Des de música en directe fins a tastos de temporada, sempre hi ha alguna cosa passant al Bar 26."
+  },
+  "footer": {
+    "hours_title": "Horari",
+    "mon_thu": "Dl - Dj",
+    "fri_sat": "Dv - Ds",
+    "sunday": "Diumenge",
+    "hours_1": "16:00 - 00:00",
+    "hours_2": "16:00 - 02:00",
+    "hours_3": "16:00 - 23:00",
+    "contact_title": "Contacte",
+    "address": "Plaça de l'Ajuntament, 26<br />08370 Calella, Espanya<br /><br />+34 622 43 02 80",
+    "tagline": "Bones Begudes. Bona Gent. Bons Moments.",
+    "brand": "Bar 26 Twenty Six"
+  },
+  "modal": {
+    "close": "Tancar finestra"
+  },
+  "image_alt": {
+    "hero": "Còctel de whisky amb menta en un bar",
+    "exterior": "Exterior del Bar 26 de nit",
+    "desk": "Taula amb begudes i articles de bar",
+    "cocktail": "Còctels",
+    "facade": "Façana del bar",
+    "tapas": "Tapas",
+    "bw_menu": "Cartell de menú en blanc i negre",
+    "interior": "Interior del bar",
+    "photo1": "Foto del bar 1",
+    "photo2": "Foto del bar 2",
+    "photo3": "Foto del bar 3",
+    "photo4": "Foto del bar 4",
+    "photo5": "Foto del bar 5",
+    "menu_modal": "Menú"
+  }
+}

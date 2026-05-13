@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "events": "Events",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Vibrant. Social.<br />Crafted. Local.",
+    "description": "Bar 26 Twenty Six is the heart of good times — where handcrafted drinks, bold flavors, and warm hospitality come together. Made for locals and travelers alike.",
+    "cta": "Explore Menu"
+  },
+  "story": {
+    "eyebrow": "Our Story",
+    "title": "Local at Heart",
+    "text": "Born from a passion for craft and community, Bar 26 is where neighbors meet and memories are made. We champion local ingredients, seasonal flavors, and timeless hospitality."
+  },
+  "menu": {
+    "eyebrow": "Crafted For You",
+    "title": "Explore Our Menu",
+    "categories": {
+      "cocktails": "Signature Cocktails",
+      "beers": "Local Beers & Wines",
+      "tapas": "Tapas & Small Plates",
+      "spirits": "Spirits & Classics",
+      "nonalcoholic": "Non-Alcoholic"
+    },
+    "cocktails_link": "Cocktails",
+    "tapas_link": "Tapas"
+  },
+  "events": {
+    "eyebrow": "Events & Happenings",
+    "title": "Good Vibes<br />Every Week",
+    "text": "From live music to seasonal tastings, there's always something happening at Bar 26."
+  },
+  "footer": {
+    "hours_title": "Hours",
+    "mon_thu": "Mon - Thu",
+    "fri_sat": "Fri - Sat",
+    "sunday": "Sunday",
+    "hours_1": "4PM - 12AM",
+    "hours_2": "4PM - 2AM",
+    "hours_3": "4PM - 11PM",
+    "contact_title": "Contact",
+    "address": "Plaça de l'Ajuntament, 26<br />08370 Calella, Spain<br /><br />+34 622 43 02 80",
+    "tagline": "Good Drinks. Good People. Good Times.",
+    "brand": "Bar 26 Twenty Six"
+  },
+  "modal": {
+    "close": "Close modal"
+  },
+  "image_alt": {
+    "hero": "Whiskey cocktail with mint in a bar",
+    "exterior": "Bar 26 exterior at night",
+    "desk": "Desk with drinks and bar items",
+    "cocktail": "Cocktails",
+    "facade": "Bar facade",
+    "tapas": "Tapas",
+    "bw_menu": "Black and white menu board",
+    "interior": "Interior of the bar",
+    "photo1": "Bar photo 1",
+    "photo2": "Bar photo 2",
+    "photo3": "Bar photo 3",
+    "photo4": "Bar photo 4",
+    "photo5": "Bar photo 5",
+    "menu_modal": "Menu"
+  }
+}

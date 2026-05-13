@@ -1,3 +1,10 @@
+/* =============================================
+   i18n — Initialize multi-language support
+   Supported: català (ca), español (es), english (en),
+              français (fr), deutsch (de)
+   ============================================= */
+i18n.init(['ca', 'en', 'es', 'fr', 'de'], 'en').catch(console.warn);
+
 const toggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".main-nav");
 
