@@ -79,6 +79,52 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+/* Legal modal */
+const legalModal = document.getElementById("legal-modal");
+const legalBar = document.getElementById("legal-bar");
+const legalModalClose = legalModal?.querySelector(".legal-modal-close");
+
+function openLegalModal() {
+  if (legalModal) {
+    legalModal.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+}
+
+function closeLegalModal() {
+  if (legalModal) {
+    legalModal.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+}
+
+legalBar?.addEventListener("click", openLegalModal);
+legalBar?.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    openLegalModal();
+  }
+});
+
+legalModalClose?.addEventListener("click", closeLegalModal);
+
+legalModal?.addEventListener("click", (event) => {
+  if (event.target === legalModal) {
+    closeLegalModal();
+  }
+});
+
+// Close legal modal on Escape (combined with existing handler)
+// The existing document keydown handler already checks for Escape and closes menu-modal.
+// We need to also close legal-modal on Escape.
+// We'll override the existing handler to close both.
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeModal();
+    closeLegalModal();
+  }
+});
+
 /* Reveal on scroll */
 const revealObserver = new IntersectionObserver(
   (entries) => {
