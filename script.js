@@ -4,6 +4,17 @@ const nav = document.querySelector(".main-nav");
 toggle?.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("open");
   toggle.setAttribute("aria-expanded", String(isOpen));
+  document.body.style.overflow = isOpen ? "hidden" : "";
+});
+
+/* Header scroll effect */
+const header = document.querySelector(".site-header");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20) {
+    header?.classList.add("scrolled");
+  } else {
+    header?.classList.remove("scrolled");
+  }
 });
 
 document.querySelectorAll(".main-nav a").forEach((link) => {
@@ -59,4 +70,21 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeModal();
   }
+});
+
+/* Reveal on scroll */
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("revealed");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+document.querySelectorAll(".reveal").forEach((el) => {
+  revealObserver.observe(el);
 });
