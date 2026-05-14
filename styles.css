@@ -998,32 +998,58 @@ body {
   .site-header {
     position: fixed;
     width: 100%;
-    grid-template-columns: auto 1fr auto;
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
+    gap: 0.5rem;
     padding: 12px 16px;
     background: rgba(5, 7, 8, 0.92);
     border-bottom: 1px solid rgba(228, 170, 51, 0.28);
     backdrop-filter: blur(10px);
   }
 
-  .brand span:first-child,
-  .brand span:last-child {
-    font-size: 0.72rem;
+  .site-header.scrolled {
+    padding: 12px 16px;
+    background: rgba(5, 7, 8, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .brand {
+    display: grid;
+    text-align: center;
+    letter-spacing: 0.2em;
+    justify-items: center;
+    width: auto;
+    justify-self: start;
   }
 
   .brand strong {
-    font-size: 3.1rem;
+    font-size: 2.2rem;
+  }
+
+  .scrolled .brand strong {
+    font-size: 2.2rem;
+  }
+
+  .brand span:first-child {
+    font-size: 0.65rem;
+  }
+
+  .brand span:last-child {
+    font-size: 0.55rem;
+    letter-spacing: 0.15em;
+    margin-top: 0.15rem;
   }
 
   .menu-toggle {
-    justify-self: end;
     display: grid;
     gap: 5px;
-    width: 38px;
+    width: 34px;
     padding: 6px;
     border: 1px solid var(--line);
     background: transparent;
-    order: 3;
+    order: 1;
   }
 
   .menu-toggle span {
@@ -1039,9 +1065,10 @@ body {
     position: static;
     display: flex;
     flex-wrap: nowrap;
-    gap: 2px;
+    gap: 3px;
     margin: 0;
-    justify-self: end;
+    margin-left: auto;
+    order: 2;
   }
 
   .lang-btn {
@@ -1052,9 +1079,15 @@ body {
   }
 
   .header-wrapper {
-    grid-template-columns: 1fr auto auto;
+    display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex: 1 1 auto;
+    max-width: none;
+    min-width: 0;
+    width: auto;
+    margin: 0;
+    order: 0;
   }
 
   .main-nav {
