@@ -1136,12 +1136,12 @@ body {
 
   .hero-image {
     min-height: 260px;
-    height: 50vh;
-    max-height: 400px;
+    height: auto;
+    aspect-ratio: 3 / 2;
     order: -1;
     margin: 72px -22px 0;
-    background-size: contain;
-    background-position: top center;
+    background-size: cover;
+    background-position: 50% 30%;
     background-repeat: no-repeat;
     background-color: #070a0b;
     mask-image: none;
@@ -1266,11 +1266,11 @@ body {
 
   .hero-image {
     min-height: 220px;
-    height: 45vh;
-    max-height: 340px;
+    height: auto;
+    aspect-ratio: 16 / 11;
     margin-top: 72px;
-    background-size: contain;
-    background-position: top center;
+    background-size: cover;
+    background-position: 50% 30%;
     background-repeat: no-repeat;
   }
 
