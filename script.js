@@ -1,7 +1,7 @@
 /* =============================================
    i18n — Initialize multi-language support
    Supported: català (ca), español (es), english (en),
-              français (fr), deutsch (de)
+               français (fr), deutsch (de)
    ============================================= */
 i18n.init(['ca', 'en', 'es', 'fr', 'de'], 'en').catch(console.warn);
 
@@ -11,7 +11,7 @@ const nav = document.querySelector(".main-nav");
 toggle?.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("open");
   toggle.setAttribute("aria-expanded", String(isOpen));
-  document.body.style.overflow = isOpen ? "hidden" : "";
+  setScrollLock(isOpen);
 });
 
 /* Header scroll effect */
@@ -26,8 +26,11 @@ window.addEventListener("scroll", () => {
 
 document.querySelectorAll(".main-nav a").forEach((link) => {
   link.addEventListener("click", () => {
-    nav.classList.remove("open");
-    toggle?.setAttribute("aria-expanded", "false");
+    if (nav.classList.contains("open")) {
+      nav.classList.remove("open");
+      toggle?.setAttribute("aria-expanded", "false");
+      setScrollLock(false);
+    }
   });
 });
 
@@ -41,6 +44,35 @@ document.querySelector(".signup")?.addEventListener("submit", (event) => {
   setTimeout(() => {
     button.textContent = "Sign Up";
   }, 1800);
+});
+
+/* ----- Scroll lock stack -----
+   Prevents conflicts between multiple UI elements
+   that each try to lock body scrolling. */
+let scrollLockCount = 0;
+
+function setScrollLock(lock) {
+  if (lock) {
+    scrollLockCount++;
+  } else {
+    scrollLockCount = Math.max(0, scrollLockCount - 1);
+  }
+  document.body.style.overflow = scrollLockCount > 0 ? "hidden" : "";
+}
+
+// Auto-release scroll lock when window is resized above mobile breakpoint
+// (in case mobile menu was left open and viewport expanded)
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 760 && scrollLockCount > 0) {
+    // Close mobile menu if open
+    if (nav?.classList.contains("open")) {
+      nav.classList.remove("open");
+      toggle?.setAttribute("aria-expanded", "false");
+    }
+    // Release all locks on resize to desktop
+    scrollLockCount = 0;
+    document.body.style.overflow = "";
+  }
 });
 
 /* Modal */
@@ -73,12 +105,6 @@ modal?.addEventListener("click", (event) => {
   }
 });
 
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    closeModal();
-  }
-});
-
 /* Legal modal */
 const legalModal = document.getElementById("legal-modal");
 const legalBar = document.getElementById("legal-bar");
@@ -87,14 +113,14 @@ const legalModalClose = legalModal?.querySelector(".legal-modal-close");
 function openLegalModal() {
   if (legalModal) {
     legalModal.classList.add("open");
-    document.body.style.overflow = "hidden";
+    setScrollLock(true);
   }
 }
 
 function closeLegalModal() {
   if (legalModal) {
     legalModal.classList.remove("open");
-    document.body.style.overflow = "";
+    setScrollLock(false);
   }
 }
 
@@ -114,10 +140,7 @@ legalModal?.addEventListener("click", (event) => {
   }
 });
 
-// Close legal modal on Escape (combined with existing handler)
-// The existing document keydown handler already checks for Escape and closes menu-modal.
-// We need to also close legal-modal on Escape.
-// We'll override the existing handler to close both.
+// Close modals on Escape — single handler, safe to call both functions
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeModal();
