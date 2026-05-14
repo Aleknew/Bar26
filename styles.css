@@ -1120,28 +1120,34 @@ body {
   .hero {
     grid-template-columns: 1fr;
     min-height: 0;
-    padding: 145px 22px 40px;
+    padding: 0 22px 30px;
+    overflow: visible;
   }
 
   .hero-copy {
-    padding-top: 0;
+    padding-top: 24px;
   }
 
   .hero::before {
     background:
-      linear-gradient(180deg, rgba(5, 7, 8, 0.6) 0%, rgba(5, 7, 8, 0.15) 40%, rgba(5, 7, 8, 0) 60%, rgba(5, 7, 8, 0.55) 100%),
+      linear-gradient(180deg, rgba(5, 7, 8, 0.5) 0%, rgba(5, 7, 8, 0.1) 30%, rgba(5, 7, 8, 0) 50%, rgba(5, 7, 8, 0.5) 100%),
       radial-gradient(circle at 58% 42%, rgba(221, 160, 43, 0.08), transparent 26rem);
   }
 
   .hero-image {
-    min-height: 280px;
+    min-height: 260px;
+    height: 50vh;
+    max-height: 400px;
     order: -1;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 52px -22px 0;
     background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
     background-color: #070a0b;
     mask-image: none;
     -webkit-mask-image: none;
+    position: relative;
+    top: 0;
   }
 
   .section-split,
@@ -1260,6 +1266,12 @@ body {
 
   .hero-image {
     min-height: 220px;
+    height: 45vh;
+    max-height: 340px;
+    margin-top: 52px;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
   }
 
   .menu-card img {
