@@ -1139,9 +1139,9 @@ body {
     height: auto;
     aspect-ratio: 3 / 2;
     order: -1;
-    margin: 72px -22px 0;
-    background-size: cover;
-    background-position: 50% 30%;
+    margin: 82px -22px 0;
+    background-size: contain;
+    background-position: top center;
     background-repeat: no-repeat;
     background-color: #070a0b;
     mask-image: none;
@@ -1206,7 +1206,8 @@ body {
     margin-top: 0;
   }
 
-  .events img:first-child {
+  .events img:first-child,
+  .events img:last-child {
     mask-image: none;
     -webkit-mask-image: none;
   }
@@ -1268,9 +1269,10 @@ body {
     min-height: 220px;
     height: auto;
     aspect-ratio: 16 / 11;
-    margin-top: 72px;
-    background-size: cover;
-    background-position: 50% 30%;
+    margin-top: 82px;
+    margin-bottom: 0;
+    background-size: contain;
+    background-position: top center;
     background-repeat: no-repeat;
   }
 
