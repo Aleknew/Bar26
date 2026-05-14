@@ -1139,7 +1139,7 @@ body {
     height: 50vh;
     max-height: 400px;
     order: -1;
-    margin: 52px -22px 0;
+    margin: 72px -22px 0;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -1268,7 +1268,7 @@ body {
     min-height: 220px;
     height: 45vh;
     max-height: 340px;
-    margin-top: 52px;
+    margin-top: 72px;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
